@@ -1,7 +1,7 @@
 ARG TOMCAT_VERSION=10.1.44-jdk21
 FROM tomcat:$TOMCAT_VERSION
 
-LABEL Maintainer JamfDevops <devops@jamf.com>
+LABEL Maintainer JamfDevops <devops@jamf.com>	
 
 RUN apt-get update -qq && \
 	DEBIAN_FRONTEND=noninteractive apt-get install --ignore-missing --no-install-recommends -y jq curl unzip && \
